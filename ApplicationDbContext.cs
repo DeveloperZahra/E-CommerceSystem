@@ -36,6 +36,7 @@ namespace E_CommerceSystem
             modelBuilder.Entity<Product>()                         // Configure Product entity
                         .HasOne(p => p.Supplier)                   // Each Product has one Supplier
                           .WithMany(s => s.Products)                 // Each Supplier has many Products
+                          .HasForeignKey(p => p.SupplierId)          // Foreign key in Product is SupplierId
 
         }
     }
