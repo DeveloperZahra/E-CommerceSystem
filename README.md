@@ -158,3 +158,9 @@ GET /api/orders/{id}/invoice returns a PDF
 * Top-rated products: ```/api/admin/reports/top-rated```
 
 * Most active customers:``` /api/admin/reports/active-customers```
+
+**6) Code Quality** 
+
+* Centralized error handling middleware (uniform problem details).
+
+* Serilog (file/console sinks) + ILogger in services/controllers.
