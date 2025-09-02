@@ -15,7 +15,7 @@ namespace E_CommerceSystem
         public DbSet<OrderProducts> OrderProducts { get; set; }
         public DbSet<Review> Reviews { get; set; }
 
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; } // DbSet for Categories → creates a table "Categories" in the database
 
         public DbSet<Supplier> Suppliers {  get; set; }
 
