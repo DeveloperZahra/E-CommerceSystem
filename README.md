@@ -39,3 +39,11 @@ Join table for many-to-many (Order ↔ Product) with quantity
 ** Reviews
 
 Stores product reviews (fields: ReviewID, Rating, Comment, UID, PID)
+
+
+** Category
+
+CategoryId, Name, Description
+
+One Category → Many Products
+
