@@ -138,3 +138,13 @@ GET /api/orders/{id}/invoice returns a PDF
 * Passwords stored as BCrypt hashes.
 
 *Role-based authorization: Admin, Customer, Manager.
+
+**4) Business Rules (Enforced in Services)**
+
+* A user can only review products they purchased.
+
+* A user cannot add more than one review to the same product.
+
+* Optimistic Concurrency on products & orders via RowVersion (timestamp):
+
+     Clients must send the latest RowVersion when updating.
