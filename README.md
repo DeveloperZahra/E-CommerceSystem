@@ -9,3 +9,11 @@ As part of Phase 2, new features, enhancements, and stricter business rules were
 ## Database Schema
 
 Entities & Relationships:
+
+** Users
+
+Manages customers & admins (fields: UID, UName, Email, Password, Role, etc.)
+
+One User ? Many Orders
+
+One User ? Many Reviews
