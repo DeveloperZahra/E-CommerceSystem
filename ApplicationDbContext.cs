@@ -17,6 +17,8 @@ namespace E_CommerceSystem
 
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<Supplier> Suppliers {  get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
