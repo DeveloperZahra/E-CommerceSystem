@@ -7,3 +7,5 @@ As part of Phase 2, new features, enhancements, and stricter business rules were
 
 
 ## Database Schema
+
+Entities & Relationships:
