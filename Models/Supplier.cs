@@ -20,5 +20,10 @@ namespace E_CommerceSystem.Models
         [EmailAddress, StringLength(200)]
         public string? ContactEmail { get; set; }
 
+        // [StringLength(25)] → Limited Phone number to max length of 25 characters, nullable
+
+        [StringLength(25)]
+        public string? Phone { get; set; }
+
     }
 }
