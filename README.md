@@ -104,6 +104,12 @@ E-CommerceSystem/
 GET /api/products?search=iphone&minPrice=100&maxPrice=1500&page=1&pageSize=20
 ```
 * Order Summary Service
-```sql 
+
 Aggregates Orders + Users + Products (totals, lines, amounts).
-```
+
+* Product Image Upload
+```sal
+POST /api/products/{id}/image
+```  
+(multipart/form-data).
+
