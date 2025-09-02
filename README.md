@@ -127,3 +127,7 @@ Lifecycle: Pending → Paid → Shipped → Delivered (or Cancelled).
 
 Sent when an order is placed or canceled.
 
+* Invoice Generation (PDF)
+```sql
+GET /api/orders/{id}/invoice returns a PDF
+```
