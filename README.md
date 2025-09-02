@@ -59,26 +59,35 @@ One Supplier → Many Products
 
 # Project Structure
 
-E-CommerceSystem :
+E-CommerceSystem/
 
+│
+├─ Controllers/             # Web API controllers (Products, Orders, Users, Reviews, Categories, Suppliers, Reports, Auth)
 
-├── Controllers/        # API controllers for Products, Users, Orders, Reviews, etc.
+├─ Services/                # Business services (interfaces + implementations)
 
-├── DTOs/               # Input & Output Data Transfer Objects
+├─ Repository/              # Repositories (data access / EF Core)
 
-├── Models/             # Entity classes (mapped to DB)
+├─ DTOs/
+│  ├─ Requests/             # Create/Update input DTOs
+│  └─ Responses/            # Output DTOs (what APIs return)
 
-├── Repository/         # Data access layer (CRUD logic)
+├─ Models/                  # EF Core entities
 
-├── Services/           # Business logic & rules
+├─ Mapping/                 # AutoMapper profiles
 
-├── Migrations/         # EF Core migrations & DB initialization
+├─ Migrations/              # EF Core migrations
 
-├── Program.cs          # Entry point & middleware setup
+├─ Middleware/              # Error handling, logging, etc.
 
-├── appsettings.json     # Configuration (DB, JWT, Email, etc.)
+├─ Infrastructure/          # Auth, Email, Pdf/Invoice helpers, FileStorage
 
-└── README.md                # Documentation
+├─ appsettings*.json        # Configuration (DB, JWT, Mail, Serilog)
+
+├─ Program.cs               # Composition root (DI, middleware, endpoints)
+
+└─ README.md
+
 
 
 
