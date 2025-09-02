@@ -25,5 +25,9 @@ namespace E_CommerceSystem.Models
         [StringLength(25)]
         public string? Phone { get; set; }
 
+        // Navigation property → Defined one-to-many relationship: one Supplier can have many Products
+        // Initialized with empty List<Product>() to avoid null reference exceptions
+        public ICollection<Product> Products { get; set; } = new List<Product>();
+
     }
 }
