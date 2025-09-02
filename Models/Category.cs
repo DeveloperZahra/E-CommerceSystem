@@ -18,5 +18,10 @@ namespace E_CommerceSystem.Models
 
         [StringLength(500)]
         public string? Description { get; set; }
+
+        // Navigation property:
+        // Defines a one-to-many relationship 
+        // (One Category can have many Products)
+        public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }
