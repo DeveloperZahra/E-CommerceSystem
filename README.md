@@ -131,3 +131,10 @@ Sent when an order is placed or canceled.
 ```sql
 GET /api/orders/{id}/invoice returns a PDF
 ```
+**3) Security & Authentication**
+
+* JWT + Refresh Tokens (refresh stored in DB; tokens stored in Cookies).
+
+* Passwords stored as BCrypt hashes.
+
+*Role-based authorization: Admin, Customer, Manager.
