@@ -33,6 +33,7 @@ namespace E_CommerceSystem
                        .OnDelete(DeleteBehavior.Restrict);        // Restrict delete (cannot delete Category if Products exist)
 
             // Configure relationship: Product ↔ Supplier (many-to-one)
+            modelBuilder.Entity<Product>()                         // Configure Product entity
 
         }
     }
