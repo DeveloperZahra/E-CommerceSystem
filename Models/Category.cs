@@ -23,5 +23,6 @@ namespace E_CommerceSystem.Models
         // Defines a one-to-many relationship 
         // (One Category can have many Products)
         public ICollection<Product> Products { get; set; } = new List<Product>();
+
     }
 }
