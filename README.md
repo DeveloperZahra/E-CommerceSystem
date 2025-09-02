@@ -119,3 +119,7 @@ POST /api/orders/{id}/cancel
 ```
 (restores stock, sends email).
 
+* Order Status Tracking
+```sql 
+Lifecycle: Pending → Paid → Shipped → Delivered (or Cancelled).
+```
