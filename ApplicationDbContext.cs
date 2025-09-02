@@ -27,6 +27,7 @@ namespace E_CommerceSystem
 
             // Configure relationship: Product ↔ Category (many-to-one)
             modelBuilder.Entity<Product>()                         // Configure Product entity
+                       .HasOne(p => p.Category)                   // Each Product has one Category
         }
     }
 }
