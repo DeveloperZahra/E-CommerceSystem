@@ -103,3 +103,7 @@ E-CommerceSystem/
 ```sql
 GET /api/products?search=iphone&minPrice=100&maxPrice=1500&page=1&pageSize=20
 ```
+* Order Summary Service
+```sql 
+Aggregates Orders + Users + Products (totals, lines, amounts).
+```
