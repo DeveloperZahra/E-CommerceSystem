@@ -34,6 +34,7 @@ namespace E_CommerceSystem
 
             // Configure relationship: Product ↔ Supplier (many-to-one)
             modelBuilder.Entity<Product>()                         // Configure Product entity
+                        .HasOne(p => p.Supplier)                   // Each Product has one Supplier
 
         }
     }
