@@ -27,3 +27,11 @@ One Product → Many Reviews
 Many Products ↔ Many Orders (via OrderProducts)
 
 ** Orders
+
+Contains order details (fields: OID, OrderDate, TotalAmount, UID, Status)
+
+One Order → Many OrderProducts
+
+** OrderProducts
+
+Join table for many-to-many (Order ↔ Product) with quantity
