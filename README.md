@@ -113,3 +113,9 @@ POST /api/products/{id}/image
 ```  
 (multipart/form-data).
 
+* Order Cancellation
+```sql
+POST /api/orders/{id}/cancel 
+```
+(restores stock, sends email).
+
