@@ -96,3 +96,10 @@ E-CommerceSystem/
 
 * Category and Supplier added with full CRUD.
 * *All controllers use DTOs and AutoMapper (no manual mapping).
+
+**2) Services Enhancements**
+
+* Products: Pagination & Filtering
+```sql
+GET /api/products?search=iphone&minPrice=100&maxPrice=1500&page=1&pageSize=20
+```
