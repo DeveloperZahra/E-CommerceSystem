@@ -15,6 +15,8 @@ namespace E_CommerceSystem
         public DbSet<OrderProducts> OrderProducts { get; set; }
         public DbSet<Review> Reviews { get; set; }
 
+        public DbSet<Category> Categories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
