@@ -12,5 +12,11 @@ namespace E_CommerceSystem.Models
 
         [Required, StringLength(100)]
         public string Name { get; set; } = null!;
+
+        // Optional (nullable) field for Description 
+        // with a maximum length of 500 characters
+
+        [StringLength(500)]
+        public string? Description { get; set; }
     }
 }
