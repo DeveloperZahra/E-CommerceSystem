@@ -17,7 +17,7 @@ namespace E_CommerceSystem
 
         public DbSet<Category> Categories { get; set; } // DbSet for Categories → creates a table "Categories" in the database
 
-        public DbSet<Supplier> Suppliers {  get; set; }
+        public DbSet<Supplier> Suppliers {  get; set; } // DbSet for Suppliers → creates a table "Suppliers" in the database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
