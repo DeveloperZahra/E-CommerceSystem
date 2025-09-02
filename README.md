@@ -92,4 +92,7 @@ E-CommerceSystem/
 
 ## Features:
 
+**1) New Models + CRUD + DTOs + AutoMapper**
 
+* Category and Supplier added with full CRUD.
+* *All controllers use DTOs and AutoMapper (no manual mapping).
