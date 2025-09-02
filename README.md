@@ -54,5 +54,7 @@ SupplierId, Name, ContactEmail, Phone
 
 One Supplier → Many Products
 
+![](1.png)
+
 
 # Project Structure
