@@ -148,3 +148,13 @@ GET /api/orders/{id}/invoice returns a PDF
 * Optimistic Concurrency on products & orders via RowVersion (timestamp):
 
      Clients must send the latest RowVersion when updating.
+
+ **5) Reports & Analytics (Admin)**
+
+* Best-selling products:``` /api/admin/reports/best-sellers?from=2025-01-01&to=2025-01-31```
+
+* Revenue reports (daily/monthly): ``` /api/admin/reports/revenue?granularity=month&from=...&to=...```
+
+* Top-rated products: ```/api/admin/reports/top-rated```
+
+* Most active customers:``` /api/admin/reports/active-customers```
