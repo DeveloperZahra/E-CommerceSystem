@@ -53,3 +53,6 @@ One Category → Many Products
 SupplierId, Name, ContactEmail, Phone
 
 One Supplier → Many Products
+
+
+# Project Structure
