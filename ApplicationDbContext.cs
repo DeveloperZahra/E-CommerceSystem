@@ -25,6 +25,8 @@ namespace E_CommerceSystem
                         .HasIndex(u => u.Email)
                         .IsUnique();
 
+            // Configure relationship: Product ↔ Category (many-to-one)
+            modelBuilder.Entity<Product>()                         // Configure Product entity
         }
     }
 }
