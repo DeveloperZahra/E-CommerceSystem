@@ -123,3 +123,7 @@ POST /api/orders/{id}/cancel
 ```sql 
 Lifecycle: Pending → Paid → Shipped → Delivered (or Cancelled).
 ```
+* Email Notifications
+
+Sent when an order is placed or canceled.
+
