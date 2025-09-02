@@ -37,6 +37,7 @@ namespace E_CommerceSystem
                         .HasOne(p => p.Supplier)                   // Each Product has one Supplier
                           .WithMany(s => s.Products)                 // Each Supplier has many Products
                           .HasForeignKey(p => p.SupplierId)          // Foreign key in Product is SupplierId
+                          .OnDelete(DeleteBehavior.Restrict);        // Restrict delete (cannot delete Supplier if Products exist)
 
         }
     }
