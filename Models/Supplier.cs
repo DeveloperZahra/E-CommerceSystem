@@ -8,5 +8,10 @@ namespace E_CommerceSystem.Models
 
         [Key]
         public int SupplierId { get; set; }
+
+        // [Required, StringLength(150)] → Made Name mandatory (NOT NULL) with max length 150 characters
+
+        [Required, StringLength(150)]
+        public string Name { get; set; } = null!;
     }
 }
