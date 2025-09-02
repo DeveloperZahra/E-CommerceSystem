@@ -25,3 +25,5 @@ Manages product catalog (fields: PID, ProductName, Description, Price, Stock, Ov
 One Product → Many Reviews
 
 Many Products ↔ Many Orders (via OrderProducts)
+
+** Orders
