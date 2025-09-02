@@ -47,3 +47,9 @@ CategoryId, Name, Description
 
 One Category → Many Products
 
+
+** Supplier
+
+SupplierId, Name, ContactEmail, Phone
+
+One Supplier → Many Products
